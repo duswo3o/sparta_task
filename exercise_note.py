@@ -49,4 +49,7 @@ import random  # 랜덤 숫자 생성을 위한 라이브러리 호출
 
 
 computer = random.randint(0,2)
-print(computer)
+# print(computer)
+
+rsp1 = {'가위':0, '바위':1, '보':2}
+print(list(rsp1.keys())[0])
