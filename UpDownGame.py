@@ -1,8 +1,6 @@
 import random  # 랜덤 숫자 생성을 위한 라이브러리 호출
 
 # 업다운 게임 함수
-
-
 def game():
     computer = random.randint(1, 10)  # 랜덤 숫자
     player = int(input("숫자를 입력하세요 : "))  # 플레이어 숫자 입력
