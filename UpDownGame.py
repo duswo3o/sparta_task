@@ -3,7 +3,8 @@ import random  # 랜덤 숫자 생성을 위한 라이브러리 호출
 # 업다운 게임 함수
 def game():
     # 1-1. 컴퓨터는 1부터 100 사이의 랜덤한 숫자를 생성
-    computer = random.randint(1, 10)  # 랜덤 숫자
+    computer = random.randint(1, 100)  # 랜덤 숫자
+
     # 1-2. 플레이어는 숫자를 입력하고
     player = int(input("숫자를 입력하세요 : "))  # 플레이어 숫자 입력
 
@@ -26,13 +27,13 @@ def game():
                 # 1-3. 플레이어가 컴퓨터의 숫자를 정확히 맞히면 시도한 횟수를 알려줌
                 print(f"시도한 횟수 : {cnt}")
                 break
+
         # 추가 도전 과제 1. 적절한 안내 메시지를 출려갛여 유효한 범위 내의 숫자를 입력하도록 유도
         else:
             print("1부터 100 사이의 수를 입력하세요")
 
         player = int(input("숫자를 입력하세요 : "))
-    return cnt # 시도한 횟수를 리턴
-
+    return cnt  # 시도한 횟수를 리턴
 
 
 count = []  # 시도 횟수를 저장할 리스트
@@ -41,6 +42,7 @@ count = []  # 시도 횟수를 저장할 리스트
 while True:
     # 게임 실행
     g = game()
+    
     # 추가 도전 과제 3. 게임이 종료될 때 플레이어의 최고 시도 횟수 기록
     count.append(g)  # 시도 횟수를 리스트에 추가
 
